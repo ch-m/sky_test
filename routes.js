@@ -9,8 +9,9 @@ const verificarJWT = require('./auth/verificarJWT')
 const RouteError = require('./helpers/RouteError')
 
 const router = new express.Router()
+const mongoURI = process.env.MONGO_URI || 'mongodb://localhost/SKY'
 
-mongoose.connect('mongodb://localhost/SKY', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(error => {
     console.log(error.message)
   })
