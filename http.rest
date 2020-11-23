@@ -1,0 +1,34 @@
+POST http://localhost:3000/signup
+content-type: application/json
+
+{
+  "nome": "joao",
+  "email": "joao6@outlook.com",
+  "senha": "123456", 
+  "telefones": [
+    {
+      "numero": "992784153",
+      "ddd": "64"
+    },
+    {
+      "numero": "81298213",
+      "ddd": "62"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:3000/signin
+content-type: application/json
+
+{
+  "email": "joao6@outlook.com",
+  "senha": "123456"
+}
+
+###
+
+GET http://localhost:3000/usuario/5b1c9bc9-453f-4b98-b067-73ee1dac179c
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjFjOWJjOS00NTNmLTRiOTgtYjA2Ny03M2VlMWRhYzE3OWMiLCJpYXQiOjE2MDYxMDA0ODgsImV4cCI6MTYwNzkwMDQ4OH0.nNsHaoMkffJD15uid7b8t_odod_gYCaFPS_JpQeK_vY
