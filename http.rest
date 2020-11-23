@@ -32,3 +32,8 @@ content-type: application/json
 GET http://localhost:3000/usuario/5b1c9bc9-453f-4b98-b067-73ee1dac179c
 Content-Type:  application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjFjOWJjOS00NTNmLTRiOTgtYjA2Ny03M2VlMWRhYzE3OWMiLCJpYXQiOjE2MDYxMDA0ODgsImV4cCI6MTYwNzkwMDQ4OH0.nNsHaoMkffJD15uid7b8t_odod_gYCaFPS_JpQeK_vY
+
+###
+
+GET http://localhost:3000/teste
+Content-Type:  application/json

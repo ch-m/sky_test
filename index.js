@@ -19,7 +19,7 @@ app.use(router)
 
 app.use((req, res, next) => {
   if (!req.route) {
-    return next(new Error('Não encontrado!'))
+    return next(new RouteError('Não encontrado!', 404))
   }
   next()
 })
